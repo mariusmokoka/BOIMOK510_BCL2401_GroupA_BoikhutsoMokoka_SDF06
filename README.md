@@ -17,7 +17,8 @@
 #### Challenges Faced
 
 - **Responsive Design for Smaller Screens**:
-- **Hover and Focus Effects**: 
+- **Hover and Focus Effects**:
+- **Trying to put a loder to center**: 
 
 #### Areas for Improvement
 
