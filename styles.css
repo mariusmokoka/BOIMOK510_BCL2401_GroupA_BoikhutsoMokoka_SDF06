@@ -337,9 +337,7 @@
       }
     }
 
-    .loader {
-      display: flex;
-      justify-content: center;
+    .loader::after {
       height: 100px;
       width: 100px;
       border-radius: 50%;
