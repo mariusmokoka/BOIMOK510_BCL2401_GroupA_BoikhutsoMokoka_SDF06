@@ -336,22 +336,35 @@
         margin: 0;
       }
     }
+    .loader {
+      display: flex;
+      justify-content: center;
+    }
 
-    .loader::after {
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
-      border: 3px solid;
-      border-color: rgb(255, 0, 221) transparent;
-      animation: spin 1s infinite ease-out;
-    }
-  
-    @keyframes spin {
-      0% {
-      transform: rotate(0deg);
+   
+     .loader {
+      justify-content: center;
+        width: 50px;
+        aspect-ratio: 1;
+        display: flex;
+        animation: l14 4s infinite;
       }
-      100% {
-       transform: rotate(360deg);
+     .loader::before,
+    .loader::after {    
+        content: "";
+        grid-area: 1/1;
+        border: 8px solid;
+        border-radius: 50%;
+        border-color: red red #0000 #0000;
+        mix-blend-mode: darken;
+        animation: l14 1s infinite linear;
       }
-    }
-  }
+.loader::after {
+  border-color: #0000 #0000 blue blue;
+  animation-direction: reverse;
+}
+@keyframes l14{ 
+  100%{transform: rotate(1turn)}
+}
+
+}
