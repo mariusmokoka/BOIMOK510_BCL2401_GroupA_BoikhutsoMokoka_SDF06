@@ -338,17 +338,19 @@
     }
     .loader {
       display: flex;
-      justify-content: center;
+      margin: 0%;
     }
 
    
      .loader {
       justify-content: center;
-        width: 50px;
-        aspect-ratio: 1;
-        display: flex;
-        animation: l14 4s infinite;
+      align-items: center;
+      width: 50px;
+      aspect-ratio: 1;
+      display: flex;
+      animation: l14 4s infinite;
       }
+      
      .loader::before,
     .loader::after {    
         content: "";
